@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">DevPro</string>
+    <string name="tvNhapTen">Username</string>
+    <string name="tvNhapMatKhau">Password</string>
+    <string name="btnDangNhap">Login</string>
+    <string name="btnDangKy">Sign up</string>
+    <string name="btnCaiDat">Setting</string>
+    <string name="tvThietLap">Select Setting</string>
+    <string name="btnDongY">Accept</string>
+    <string name="TiengAnh">English</string>
+    <string name="TiengViet">Vietnamese</string>
+    <string name="cbTuDongChon">Auto Select</string>
+
+</resources>

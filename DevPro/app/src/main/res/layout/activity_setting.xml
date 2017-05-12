@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thinh.devpro.SettingActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tvThietLap"
+        android:textSize="22dp"/>
+    <Switch
+        android:id="@+id/swtLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/TiengAnh"
+        />
+    <CheckBox
+        android:id="@+id/checkboxAutoStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cbTuDongChon"/>
+    <Button
+        android:id="@+id/btnDongY"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDongY"/>
+
+</LinearLayout>

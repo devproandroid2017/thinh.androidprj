@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Lap Trinh Cao Thu</string>
+    <string name="tvNhapTen">Nhap ten</string>
+    <string name="tvNhapMatKhau">Nhap mat khau</string>
+    <string name="btnDangNhap">Dang nhap</string>
+    <string name="btnDangKy">Dang ky</string>
+    <string name="btnCaiDat">Cai dat</string>
+    <string name="tvThietLap">Thiet lap</string>
+    <string name="btnDongY">Dong y</string>
+    <string name="TiengAnh">Tieng Anh</string>
+    <string name="TiengViet">Tieng Viet</string>
+    <string name="cbTuDongChon">Tu Dong Chon</string>
+</resources>
