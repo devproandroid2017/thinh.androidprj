@@ -1,13 +1,17 @@
 package com.example.thinh.lession15;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity{
-    private ListView lvBaiTap;
+    private GridView lvBaiTap;
+//    private ListView lvBaiTap;
     private ArrayList<Item> item;
     private ItemAdapter IA;
 
@@ -16,12 +20,29 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lvBaiTap = (ListView) findViewById(R.id.lvBaiTap);
+        lvBaiTap = (GridView) findViewById(R.id.lvBaiTap);
+//        lvBaiTap = (ListView) findViewById(R.id.lvBaiTap);
         item = getDataItem();
         IA =  new ItemAdapter(item, getLayoutInflater());
         lvBaiTap.setAdapter(IA);
+        addEvent();
 
     }
+
+    private void addEvent() {
+        AdapterView.OnItemClickListener onClick = new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 Item item1 = item.get(position);
+                 Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                 intent.putExtra("image",item1.getImit());
+                 intent.putExtra("name",item1.getName());
+                startActivity(intent);
+            }
+        };
+        lvBaiTap.setOnItemClickListener(onClick);
+    }
+
 
     private ArrayList<Item> getDataItem(){
         ArrayList<Item> lsItem = new ArrayList<>();
@@ -36,4 +57,5 @@ public class MainActivity extends AppCompatActivity{
         lsItem.add(new Item(R.drawable.img8,"Nfc Service CPU",0,"System",false));
         return lsItem;
     }
+
 }
